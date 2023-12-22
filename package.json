@@ -8,18 +8,13 @@
 	},
 	"license": "MIT",
 	"author": {
+		"name": "Josh Goldberg",
 		"email": "npm@joshuakgoldberg.com"
 	},
 	"type": "module",
-	"main": "./lib/index.js",
-	"files": [
-		"lib/",
-		"package.json",
-		"LICENSE.md",
-		"README.md"
-	],
 	"scripts": {
-		"build": "tsup",
+		"build": "remix build",
+		"dev": "remix dev -c \"node server.mjs\"",
 		"format": "prettier \"**/*\" --ignore-unknown",
 		"lint": "eslint . .*js --max-warnings 0",
 		"lint:knip": "knip",
@@ -28,20 +23,31 @@
 		"lint:packages": "pnpm dedupe --check",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky install",
-		"should-semantic-release": "should-semantic-release --verbose",
-		"test": "vitest",
 		"tsc": "tsc"
 	},
 	"lint-staged": {
 		"*": "prettier --ignore-unknown --write"
 	},
+	"dependencies": {
+		"@remix-run/css-bundle": "^2.4.0",
+		"@remix-run/express": "^2.4.0",
+		"@remix-run/node": "^2.4.0",
+		"@remix-run/react": "^2.4.0",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"express": "^4.18.2",
+		"github-username-to-emails": "^0.1.0",
+		"isbot": "^3.7.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
 	"devDependencies": {
-		"@release-it/conventional-changelog": "^8.0.1",
+		"@remix-run/dev": "^2.4.0",
 		"@types/eslint": "^8.56.0",
+		"@types/react": "^18.2.45",
 		"@typescript-eslint/eslint-plugin": "^6.15.0",
 		"@typescript-eslint/parser": "^6.15.0",
-		"@vitest/coverage-v8": "^1.1.0",
-		"console-fail-test": "^0.2.3",
 		"cspell": "^8.2.1",
 		"eslint": "^8.56.0",
 		"eslint-plugin-deprecation": "^2.0.0",
@@ -50,10 +56,8 @@
 		"eslint-plugin-jsonc": "^2.11.2",
 		"eslint-plugin-markdown": "^3.0.1",
 		"eslint-plugin-n": "^16.5.0",
-		"eslint-plugin-no-only-tests": "^3.1.0",
 		"eslint-plugin-perfectionist": "^2.5.0",
 		"eslint-plugin-regexp": "^2.1.2",
-		"eslint-plugin-vitest": "^0.3.18",
 		"eslint-plugin-yml": "^1.11.0",
 		"husky": "^8.0.3",
 		"jsonc-eslint-parser": "^2.4.0",
@@ -66,12 +70,8 @@
 		"prettier": "^3.1.1",
 		"prettier-plugin-curly": "^0.1.3",
 		"prettier-plugin-packagejson": "^2.4.7",
-		"release-it": "^17.0.1",
 		"sentences-per-line": "^0.2.1",
-		"should-semantic-release": "^0.2.1",
-		"tsup": "^8.0.1",
 		"typescript": "^5.3.3",
-		"vitest": "^1.1.0",
 		"yaml-eslint-parser": "^1.2.2"
 	},
 	"packageManager": "pnpm@8.7.0",

@@ -11,18 +11,18 @@ pnpm install
 > This repository includes a list of suggested VS Code extensions.
 > It's a good idea to use [VS Code](https://code.visualstudio.com) and accept its suggestion to install them, as they'll help with development.
 
+You can then run Remix with a local dev server that hot-module-refreshes on file changes:
+
+```shell
+pnpm dev
+```
+
 ## Building
 
-Run [**tsup**](https://tsup.egoist.dev) locally to build source files from `src/` into output files in `lib/`:
+Run Remix's builder to create a local version of the site:
 
 ```shell
 pnpm build
-```
-
-Add `--watch` to run the builder in a watch mode that continuously cleans and recreates `lib/` as you save files:
-
-```shell
-pnpm build --watch
 ```
 
 ## Formatting
@@ -55,31 +55,6 @@ For example, ESLint can be run with `--fix` to auto-fix some lint rule complaint
 ```shell
 pnpm run lint --fix
 ```
-
-Note that you'll likely need to run `pnpm build` before `pnpm lint` so that lint rules which check the file system can pick up on any built files.
-
-## Testing
-
-[Vitest](https://vitest.dev) is used for tests.
-You can run it locally on the command-line:
-
-```shell
-pnpm run test
-```
-
-Add the `--coverage` flag to compute test coverage and place reports in the `coverage/` directory:
-
-```shell
-pnpm run test --coverage
-```
-
-Note that [console-fail-test](https://github.com/JoshuaKGoldberg/console-fail-test) is enabled for all test runs.
-Calls to `console.log`, `console.warn`, and other console methods will cause a test to fail.
-
-### Debugging Tests
-
-This repository includes a [VS Code launch configuration](https://code.visualstudio.com/docs/editor/debugging) for debugging unit tests.
-To launch it, open a test file, then run _Debug Current Test File_ from the VS Code Debug panel (or press F5).
 
 ## Type Checking
 

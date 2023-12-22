@@ -2,9 +2,10 @@
 	"dictionaries": ["typescript"],
 	"ignorePaths": [
 		".github",
+		"build",
 		"CHANGELOG.md",
 		"coverage",
-		"lib",
+		"public",
 		"node_modules",
 		"pnpm-lock.yaml"
 	],
@@ -14,6 +15,7 @@
 		"commitlint",
 		"contributorsrc",
 		"conventionalcommits",
+		"isbot",
 		"knip",
 		"lcov",
 		"markdownlintignore",
@@ -21,7 +23,6 @@
 		"outro",
 		"packagejson",
 		"quickstart",
-		"tsup",
 		"wontfix"
 	]
 }
