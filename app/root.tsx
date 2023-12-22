@@ -32,7 +32,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 export default function App() {
 	const data = useLoaderData<typeof loader>();
 	const [params] = useSearchParams();
-	const username = params.get("username");
+	const username = params.get("username") || undefined;
 
 	return (
 		<html lang="en">
@@ -43,6 +43,16 @@ export default function App() {
 			</head>
 			<body>
 				<Header />
+				<form method="GET">
+					<label htmlFor="username">Username:</label>
+					<input
+						defaultValue={username}
+						id="username"
+						name="username"
+						type="text"
+					/>
+					<button type="submit">Submit</button>
+				</form>
 				{/* eslint-disable-next-line @typescript-eslint/no-non-null-assertion */}
 				{data && <Results data={data} username={username!} />}
 				<Footer />
