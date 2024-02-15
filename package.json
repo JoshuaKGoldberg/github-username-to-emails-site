@@ -46,7 +46,7 @@
 		"@remix-run/dev": "^2.4.0",
 		"@types/eslint": "^8.56.0",
 		"@types/react": "^18.2.45",
-		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^6.15.0",
 		"cspell": "^8.2.1",
 		"eslint": "^8.56.0",
