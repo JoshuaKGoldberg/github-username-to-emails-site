@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@remix-run/css-bundle':
     specifier: ^2.4.0
-    version: 2.8.0
+    version: 2.8.1
   '@remix-run/express':
     specifier: ^2.4.0
     version: 2.8.0(express@4.18.3)(typescript@5.4.2)
@@ -1842,8 +1842,8 @@ packages:
       - domexception
     dev: true
 
-  /@remix-run/css-bundle@2.8.0:
-    resolution: {integrity: sha512-QGZ9i99qQNeRt9ophHtF2mMXNQFURlyogA75oMWbZfVxDt3kV6jjit+LTgQ3rxjOvu2Q81xNnb7rc7Mi/nnRSQ==}
+  /@remix-run/css-bundle@2.8.1:
+    resolution: {integrity: sha512-rn72xyUJ+rR5I0IxjlDWPPBddV1kpLvOT2FY9SMIUTFqyxq3ZK2W7FCtFzBt2JZQGZ9oDYidXYMWkW6tXY//rg==}
     engines: {node: '>=18.0.0'}
     dev: false
 
