@@ -112,11 +112,11 @@ importers:
         specifier: ^0.41.0
         version: 0.41.0
       npm-package-json-lint:
-        specifier: ^7.1.0
-        version: 7.1.0(typescript@5.4.5)
+        specifier: ^8.0.0
+        version: 8.0.0(typescript@5.4.5)
       npm-package-json-lint-config-default:
         specifier: ^7.0.0
-        version: 7.0.0(npm-package-json-lint@7.1.0(typescript@5.4.5))
+        version: 7.0.0(npm-package-json-lint@8.0.0(typescript@5.4.5))
       prettier:
         specifier: ^3.1.1
         version: 3.1.1
@@ -3330,9 +3330,9 @@ packages:
     peerDependencies:
       npm-package-json-lint: ^7.1.0
 
-  npm-package-json-lint@7.1.0:
-    resolution: {integrity: sha512-ypcMpag32TCP89zzLSS+7vjeR2QY613WzmO2upcJgKNWlcswDz8cdb80urbBNHkhSPI40ex3nsKrRDH/WhMYOg==}
-    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+  npm-package-json-lint@8.0.0:
+    resolution: {integrity: sha512-44xqAKoV0nXnBYYLGUhMItGZb5tW3cLoW3UZxcsaCOX/YAkECrzOQA5F48oAA51vVE5CqAnsJB2CFvtolzMA3Q==}
+    engines: {node: '>=18.0.0', npm: '>=9.0.0'}
     hasBin: true
 
   npm-pick-manifest@8.0.2:
@@ -4213,8 +4213,8 @@ packages:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
 
-  type-fest@4.8.3:
-    resolution: {integrity: sha512-//BaTm14Q/gHBn09xlnKNqfI8t6bmdzx2DXYfPBNofN0WUybCEUDcbCWcTa0oF09lzLjZgPphXAsvRiMK0V6Bw==}
+  type-fest@4.20.0:
+    resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
     engines: {node: '>=16'}
 
   type-is@1.6.18:
@@ -8230,11 +8230,11 @@ snapshots:
       semver: 7.6.2
       validate-npm-package-name: 5.0.1
 
-  npm-package-json-lint-config-default@7.0.0(npm-package-json-lint@7.1.0(typescript@5.4.5)):
+  npm-package-json-lint-config-default@7.0.0(npm-package-json-lint@8.0.0(typescript@5.4.5)):
     dependencies:
-      npm-package-json-lint: 7.1.0(typescript@5.4.5)
+      npm-package-json-lint: 8.0.0(typescript@5.4.5)
 
-  npm-package-json-lint@7.1.0(typescript@5.4.5):
+  npm-package-json-lint@8.0.0(typescript@5.4.5):
     dependencies:
       ajv: 6.12.6
       ajv-errors: 1.0.1(ajv@6.12.6)
@@ -8251,7 +8251,7 @@ snapshots:
       semver: 7.6.2
       slash: 3.0.0
       strip-json-comments: 3.1.1
-      type-fest: 4.8.3
+      type-fest: 4.20.0
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
       - supports-color
@@ -9224,7 +9224,7 @@ snapshots:
 
   type-fest@0.8.1: {}
 
-  type-fest@4.8.3: {}
+  type-fest@4.20.0: {}
 
   type-is@1.6.18:
     dependencies:
