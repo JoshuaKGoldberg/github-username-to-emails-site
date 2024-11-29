@@ -101,7 +101,7 @@ importers:
         version: 2.4.0
       knip:
         specifier: ^5.0.0
-        version: 5.37.2(@types/node@22.9.3)(typescript@5.7.2)
+        version: 5.38.0(@types/node@22.9.3)(typescript@5.7.2)
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.10
@@ -2766,8 +2766,8 @@ packages:
   javascript-stringify@2.1.0:
     resolution: {integrity: sha512-JVAfqNPTvNq3sB/VHQJAFxN/sPgKnsKrCwyRt15zwNCdrMMJDdcEOdubuy+DuJYYdm0ox1J4uzEuYKkN+9yhVg==}
 
-  jiti@2.4.0:
-    resolution: {integrity: sha512-H5UpaUI+aHOqZXlYOaFP/8AzKsg+guWu+Pr3Y8i7+Y3zr1aXAvCvTAQ1RxSc6oVD8R8c7brgNtTVP91E7upH/g==}
+  jiti@2.4.1:
+    resolution: {integrity: sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==}
     hasBin: true
 
   js-tokens@4.0.0:
@@ -2836,8 +2836,8 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  knip@5.37.2:
-    resolution: {integrity: sha512-Rs9HHTgmUacyKxchP4kRwG8idi0tzVHVpSyo4EM9sNGDSrPq20lhKXOWMFmShGCV6CH2352393Ok/qG1NblCMw==}
+  knip@5.38.0:
+    resolution: {integrity: sha512-aoxgQKzhoepkTHltu6pgsPbz6tka0y3NT+SVLY4LpyinCsGlMCYxqm1Ki/C0DkfFS4ps1BThPph93tAkB7tVBQ==}
     engines: {node: '>=18.6.0'}
     hasBin: true
     peerDependencies:
@@ -7407,7 +7407,7 @@ snapshots:
 
   javascript-stringify@2.1.0: {}
 
-  jiti@2.4.0: {}
+  jiti@2.4.1: {}
 
   js-tokens@4.0.0: {}
 
@@ -7463,7 +7463,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  knip@5.37.2(@types/node@22.9.3)(typescript@5.7.2):
+  knip@5.38.0(@types/node@22.9.3)(typescript@5.7.2):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@snyk/github-codeowners': 1.1.0
@@ -7471,7 +7471,7 @@ snapshots:
       easy-table: 1.2.0
       enhanced-resolve: 5.17.1
       fast-glob: 3.3.2
-      jiti: 2.4.0
+      jiti: 2.4.1
       js-yaml: 4.1.0
       minimist: 1.2.8
       picocolors: 1.1.1
