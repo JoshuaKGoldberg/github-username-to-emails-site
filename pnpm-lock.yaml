@@ -13,7 +13,7 @@ importers:
         version: 2.15.2
       '@remix-run/express':
         specifier: ^2.4.0
-        version: 2.15.1(express@4.21.2)(typescript@5.7.2)
+        version: 2.15.2(express@4.21.2)(typescript@5.7.2)
       '@remix-run/node':
         specifier: ^2.4.0
         version: 2.15.2(typescript@5.7.2)
@@ -993,20 +993,11 @@ packages:
       wrangler:
         optional: true
 
-  '@remix-run/express@2.15.1':
-    resolution: {integrity: sha512-aw7aEj6K9HGjJqHB9JKHLp6WE/bisYmnt52pRzkK/nzCWgK3hwBdi7tj5KYFTw9WfgZhEQICUmA/pmuafo7wyg==}
+  '@remix-run/express@2.15.2':
+    resolution: {integrity: sha512-54FKQ6/Zj2DCxc4/9tWKUJLPkFakCUf1m7j7a5zp4JGDr436lkZEpS9btfoBZAVq14SIMp5Uc4yt5rUJ1PMORw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       express: ^4.20.0
-      typescript: ^5.1.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  '@remix-run/node@2.15.1':
-    resolution: {integrity: sha512-23xWN3/yOohNUr27KS7hEcDMbtufMkniXfXkcLx8Dz2wUVNfJYGpICjeV48Ue/INtpiUCCzOYwkL9VRjIMEJbA==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
       typescript: ^5.1.0
     peerDependenciesMeta:
       typescript:
@@ -5465,22 +5456,10 @@ snapshots:
       - ts-node
       - utf-8-validate
 
-  '@remix-run/express@2.15.1(express@4.21.2)(typescript@5.7.2)':
+  '@remix-run/express@2.15.2(express@4.21.2)(typescript@5.7.2)':
     dependencies:
-      '@remix-run/node': 2.15.1(typescript@5.7.2)
+      '@remix-run/node': 2.15.2(typescript@5.7.2)
       express: 4.21.2
-    optionalDependencies:
-      typescript: 5.7.2
-
-  '@remix-run/node@2.15.1(typescript@5.7.2)':
-    dependencies:
-      '@remix-run/server-runtime': 2.15.1(typescript@5.7.2)
-      '@remix-run/web-fetch': 4.4.2
-      '@web3-storage/multipart-parser': 1.0.0
-      cookie-signature: 1.2.2
-      source-map-support: 0.5.21
-      stream-slice: 0.1.2
-      undici: 6.21.0
     optionalDependencies:
       typescript: 5.7.2
 
