@@ -41,7 +41,7 @@
 		"@eslint/markdown": "9.0.0",
 		"@remix-run/dev": "2.16.1",
 		"@types/node": "26.6.2",
-		"@types/react": "^19.0.0",
+		"@types/react": "19.0.10",
 		"create-typescript-app": "2.87.23",
 		"cspell": "10.5.2",
 		"eslint": "10.15.0",
