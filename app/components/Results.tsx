@@ -4,6 +4,7 @@ import { GitHubUsernameEmails } from "github-username-to-emails";
 import { InlinePre } from "./InlinePre.tsx";
 
 export interface ResultsProps {
+	// eslint-disable-next-line @typescript-eslint/no-deprecated
 	data: SerializeFrom<GitHubUsernameEmails>;
 	username: string;
 }

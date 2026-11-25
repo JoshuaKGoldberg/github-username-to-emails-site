@@ -1,10 +1,11 @@
 {
 	"name": "github-username-to-emails-site",
 	"version": "0.0.0",
+	"private": true,
 	"description": "Web app to fetch any public emails associated with a GitHub username. 📧",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/JoshuaKGoldberg/github-username-to-emails-site"
+		"url": "git+https://github.com/JoshuaKGoldberg/github-username-to-emails-site.git"
 	},
 	"license": "MIT",
 	"author": {
@@ -15,27 +16,19 @@
 	"scripts": {
 		"build": "remix build",
 		"dev": "remix dev -c \"node server.mjs\"",
-		"format": "prettier \"**/*\" --ignore-unknown",
-		"lint": "eslint . .*js --max-warnings 0",
+		"format": "prettier .",
+		"lint": "eslint . --max-warnings 0",
 		"lint:knip": "knip",
-		"lint:md": "markdownlint \"**/*.md\" \".github/**/*.md\" --rules sentences-per-line",
-		"lint:package-json": "npmPkgJsonLint .",
-		"lint:packages": "pnpm dedupe --check",
+		"lint:knip:production": "knip --production",
 		"lint:spelling": "cspell \"**\" \".github/**/*\"",
 		"prepare": "husky",
 		"tsc": "tsc"
-	},
-	"lint-staged": {
-		"*": "prettier --ignore-unknown --write"
 	},
 	"dependencies": {
 		"@remix-run/css-bundle": "^2.4.0",
 		"@remix-run/express": "^2.4.0",
 		"@remix-run/node": "^2.4.0",
 		"@remix-run/react": "^2.4.0",
-		"eslint-plugin-jsx-a11y": "^6.8.0",
-		"eslint-plugin-react": "^7.33.2",
-		"eslint-plugin-react-hooks": "^5.0.0",
 		"express": "^4.18.2",
 		"github-username-to-emails": "^0.3.0",
 		"isbot": "^5.0.0",
@@ -43,42 +36,40 @@
 		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
+		"@eslint-community/eslint-plugin-eslint-comments": "4.8.1",
+		"@eslint/js": "10.0.1",
+		"@eslint/markdown": "9.0.0",
 		"@remix-run/dev": "^2.4.0",
-		"@types/eslint": "^8.56.0",
+		"@types/node": "26.6.2",
 		"@types/react": "^19.0.0",
-		"@typescript-eslint/eslint-plugin": "^7.0.0",
-		"@typescript-eslint/parser": "^8.0.0",
-		"cspell": "^8.2.1",
-		"eslint": "^8.56.0",
-		"eslint-plugin-deprecation": "^3.0.0",
-		"eslint-plugin-eslint-comments": "^3.2.0",
-		"eslint-plugin-jsdoc": "^50.0.0",
-		"eslint-plugin-jsonc": "^2.11.2",
-		"eslint-plugin-markdown": "^3.0.1",
-		"eslint-plugin-n": "^17.0.0",
-		"eslint-plugin-perfectionist": "^2.5.0",
-		"eslint-plugin-regexp": "^2.1.2",
-		"eslint-plugin-yml": "^1.11.0",
-		"husky": "^9.0.0",
-		"jsonc-eslint-parser": "^2.4.0",
-		"knip": "^5.0.0",
-		"lint-staged": "^15.2.0",
-		"markdownlint": "^0.37.0",
-		"markdownlint-cli": "^0.44.0",
-		"npm-package-json-lint": "^8.0.0",
-		"npm-package-json-lint-config-default": "^7.0.0",
-		"prettier": "^3.1.1",
-		"prettier-plugin-curly": "^0.3.0",
-		"prettier-plugin-packagejson": "^2.4.7",
-		"sentences-per-line": "^0.3.0",
-		"typescript": "^5.3.3",
-		"yaml-eslint-parser": "^1.2.2"
+		"create-typescript-app": "2.87.23",
+		"cspell": "10.5.2",
+		"eslint": "10.15.0",
+		"eslint-plugin-jsdoc": "65.5.0",
+		"eslint-plugin-jsonc": "3.4.1",
+		"eslint-plugin-jsx-a11y": "6.10.2",
+		"eslint-plugin-markdown-links": "0.9.1",
+		"eslint-plugin-n": "18.5.0",
+		"eslint-plugin-package-json": "1.14.0",
+		"eslint-plugin-perfectionist": "5.14.0",
+		"eslint-plugin-react-hooks": "7.1.1",
+		"eslint-plugin-regexp": "3.3.1",
+		"eslint-plugin-yml": "3.10.0",
+		"husky": "9.1.7",
+		"jiti": "2.7.0",
+		"knip": "6.47.0",
+		"prettier": "3.9.6",
+		"prettier-plugin-curly": "0.4.1",
+		"prettier-plugin-packagejson": "3.1.0",
+		"prettier-plugin-padding-lines": "0.1.0",
+		"prettier-plugin-sentences-per-line": "0.2.4",
+		"prettier-plugin-sh": "0.20.0",
+		"pretty-quick": "4.2.2",
+		"typescript": "5.9.3",
+		"typescript-eslint": "8.73.0"
 	},
 	"packageManager": "pnpm@10.6.3",
 	"engines": {
 		"node": ">=18"
-	},
-	"publishConfig": {
-		"provenance": true
 	}
 }
