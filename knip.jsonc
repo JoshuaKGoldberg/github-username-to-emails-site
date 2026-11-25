@@ -1,7 +1,0 @@
-{
-	"$schema": "https://unpkg.com/knip@latest/schema.json",
-	"entry": ["app/route.tsx!", "server.mjs!"],
-	"ignoreDependencies": ["isbot"],
-	"ignoreExportsUsedInFile": { "interface": true, "type": true },
-	"project": ["src/**/*.ts!"]
-}

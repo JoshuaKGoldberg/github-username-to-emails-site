@@ -22,16 +22,10 @@ export const links: LinksFunction = () => [
 	...(cssBundleHref ? [{ href: cssBundleHref, rel: "stylesheet" }] : []),
 ];
 
-export async function loader({ request }: LoaderFunctionArgs) {
-	const { searchParams } = new URL(request.url);
-	const username = searchParams.get("username");
-
-	return username ? json(await getGitHubUsernameEmails({ username })) : null;
-}
-
 export default function App() {
 	const data = useLoaderData<typeof loader>();
 	const [params] = useSearchParams();
+	// eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
 	const username = params.get("username") || undefined;
 
 	return (
@@ -62,4 +56,12 @@ export default function App() {
 			</body>
 		</html>
 	);
+}
+
+export async function loader({ request }: LoaderFunctionArgs) {
+	const { searchParams } = new URL(request.url);
+	const username = searchParams.get("username");
+
+	// eslint-disable-next-line @typescript-eslint/no-deprecated
+	return username ? json(await getGitHubUsernameEmails({ username })) : null;
 }
